@@ -166,7 +166,7 @@ def add_masked_labels_for_contradiction (doc):
 
 
 
-# predicts masked words within a sentence based on the surrounding words (in this case verbs)
+# predicts masked words (in this case verbs) within a sentence based on the surrounding words
 def predict_masked_words_for_contradiction(text, nlp_model, top_k=20):
     # Tokenize input using spacy
     original_text = text
