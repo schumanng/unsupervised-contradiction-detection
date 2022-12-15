@@ -147,6 +147,7 @@ def create_sentence_DB (nlp_model, sents):
 
 
 
+# find sentences with the same subject
 def find_sent_with_same_sb (sents_DB_df, own_sents_df, nlp_model):
     print('======================')
     print('find_sent_with_same_sb')
