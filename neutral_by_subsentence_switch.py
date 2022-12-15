@@ -3,9 +3,9 @@
 This script is used to create neutral hypothesis sentences by switching previously extracted sub-sentences with the
 original premise sentence. For this purpose, the sub-sentences resulting from the script "entailment_by_subsentence.py"
 (to be found in "entailment_by_subsentence.csv") are used as new premise sentences and the original premise sentences
-are used as new hypothesis sentences. In this way, additional (neutral) information is added to the premise sentences.
-The "new" hypothesis sentences are then also transformed into alternative sentences with the same meaning using a
-paraphrasing model. The resulting dataframe contains the premise sentences in the first column and the newly generated
+are used as new hypothesis sentences. In this way, additional (neutral) information will be provided by the hypothesis 
+sentences. The "new" hypothesis sentences are then also transformed into alternative sentences with the same meaning using 
+a paraphrasing model. The resulting dataframe contains the premise sentences in the first column and the newly generated
 neutral hypothesis sentences in the columns 2 to n.
 
 What you need to do: install required packages and change the path according to your directory (line 41)
