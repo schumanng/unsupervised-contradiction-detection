@@ -220,4 +220,4 @@ while len(antonym_adj_adv_df.columns) > 7:
     antonym_adj_adv_df = antonym_adj_adv_df.drop(antonym_adj_adv_df.columns[len(antonym_adj_adv_df.columns) - 1],axis=1)
 
 # write final output to disc:
-antonym_adj_adv_df.to_csv('antonym_adj_adv.csv', sep=';')
+antonym_adj_adv_df.to_csv('output/contradiction_by_antonym_adj_adv.csv', sep=';')
