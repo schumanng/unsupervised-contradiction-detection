@@ -91,8 +91,8 @@ sents_DB_1 = create_noun_db(train_df_sample)
 sents_DB_1_df = pd.DataFrame(sents_DB_1, columns = ['sent', 'nouns'])
 contradicting_sents = sents_with_different_nouns(sents_DB_1_df, sents_DB_1_df)
 contradicting_sents_df = pd.DataFrame(contradicting_sents, columns = ['sent',
-                                                                      'different_nouns_1',
-                                                                      'different_nouns_2',
-                                                                      'different_nouns_3'])
+                                                                      'different_content_1',
+                                                                      'different_content_2',
+                                                                      'different_content_3'])
 # write final output to disc:
-contradicting_sents_df.to_csv('contradiction_by_different_contents.csv', sep=';')
+contradicting_sents_df.to_csv('output/contradiction_by_different_contents.csv', sep=';')
