@@ -32,7 +32,7 @@ def get_response(input_text, num_return_sequences, num_beams):
 
 
 # load SNLI training set
-train_df = pd.read_csv('snli_1.0_train.csv', sep=',')  # adjust the path according to your directory
+train_df = pd.read_csv('input/snli_1.0_train.csv', sep=',')  # adjust the path according to your directory
 train_df_sample = train_df[:20]  # draw a sample, if desired
 train_df_sample = train_df_sample['sentence1']
 train_df_sample = train_df_sample.drop_duplicates()
@@ -69,4 +69,4 @@ for col in paraphrases_df.columns:
 paraphrases_df = paraphrases_df.rename(columns={"paraphrased_0": "sent"})
 
 # write final output to disc:
-paraphrases_df.to_csv('entailment_by_paraphrasing.csv', sep=';')
+paraphrases_df.to_csv('output/entailment_by_paraphrasing.csv', sep=';')
