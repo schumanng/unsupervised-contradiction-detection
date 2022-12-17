@@ -190,7 +190,7 @@ def numberSubstitution (nlp_model, sent):
 
 
 # load SNLI training set
-train_df = pd.read_csv('snli_1.0_train.csv', sep = ',')
+train_df = pd.read_csv('input/snli_1.0_train.csv', sep = ',')
 train_df_sample = train_df#[:2000]  # draw a sample, if desired
 train_df_sample = train_df_sample['sentence1']
 train_df_sample = train_df_sample.drop_duplicates()
@@ -232,4 +232,4 @@ while columns <= 6:
     columns += 1
 
 # write final output to disc:
-number_subst_df.to_csv('contradiction_by_number_substitution.csv', sep=';')
+number_subst_df.to_csv('output/contradiction_by_number_substitution.csv', sep=';')
