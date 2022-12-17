@@ -6,7 +6,7 @@ by random values. The modified sentences are then transformed into alternative s
 using a paraphrasing model. The resulting dataframe contains the original premise sentences in the first column
 and the newly generated contradictory hypothesis sentences in the columns 2 to n.
 
-What you need to do: install required packages and change the path according to your directory (line 193)
+What you need to do: install required packages and change the path according to your directory (line 193 and 235)
 """
 
 import re
