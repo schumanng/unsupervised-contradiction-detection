@@ -179,7 +179,7 @@ def negationIntroduction (nlp_model, sent):
 
 
 # load SNLI training set
-train_df = pd.read_csv('snli_1.0_train.csv', sep=',')  # adjust the path according to your directory
+train_df = pd.read_csv('input/snli_1.0_train.csv', sep=',')  # adjust the path according to your directory
 train_df_sample = train_df#[:2000]  # draw a sample, if desired
 train_df_sample = train_df_sample['sentence1']
 train_df_sample = train_df_sample.drop_duplicates()
@@ -217,4 +217,4 @@ for col in negation_insertion_df.columns:
 negation_insertion_df = negation_insertion_df.rename(columns={"negation_0": "sent"})
 
 # write final output to disc:
-negation_insertion_df.to_csv('contradiction_by_negation.csv', sep=';')
+negation_insertion_df.to_csv('output/contradiction_by_negation.csv', sep=';')
