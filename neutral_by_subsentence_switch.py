@@ -8,7 +8,7 @@ sentences. The "new" hypothesis sentences are then also transformed into alterna
 a paraphrasing model. The resulting dataframe contains the premise sentences in the first column and the newly generated
 neutral hypothesis sentences in the columns 2 to n.
 
-What you need to do: install required packages and change the path according to your directory (line 41)
+What you need to do: install required packages and change the path according to your directory (line 41 and 105)
 """
 
 import spacy
