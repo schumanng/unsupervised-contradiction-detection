@@ -4,7 +4,7 @@ This script is used to create entailing hypothesis sentences using paraphrasing.
 The resulting dataframe contains the original premise sentences in the first column and the newly generated
 entailing hypothesis sentences in the columns 2 to n.
 
-What you need to do: install required packages and change the path according to your directory (line 35)
+What you need to do: install required packages and change the path according to your directory (line 35 and 72)
 """
 
 import pandas as pd
