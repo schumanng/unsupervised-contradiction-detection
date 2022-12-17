@@ -80,7 +80,7 @@ def sents_with_different_nouns (sents_DB_1_df, sents_DB_2_df):
 
 
 # load SNLI training set
-train_df = pd.read_csv('snli_1.0_train.csv', sep=',')  # adjust the path according to your directory
+train_df = pd.read_csv('input/snli_1.0_train.csv', sep=',')  # adjust the path according to your directory
 train_df_sample = train_df#[:2000]  # draw a sample, if desired
 train_df_sample = train_df_sample['sentence1']
 train_df_sample = train_df_sample.drop_duplicates()
