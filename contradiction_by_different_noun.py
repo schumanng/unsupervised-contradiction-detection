@@ -251,7 +251,7 @@ def predict_masked_words_for_contradiction(text, nlp_model, top_k=20):
 
 
 # load SNLI training set
-train_df = pd.read_csv('snli_1.0_train.csv', sep=',')  # adjust the path according to your directory
+train_df = pd.read_csv('input/snli_1.0_train.csv', sep=',')  # adjust the path according to your directory
 train_df_sample = train_df#[:2000]  # draw a sample, if desired
 train_df_sample = train_df_sample['sentence1']
 train_df_sample = train_df_sample.drop_duplicates()
@@ -292,4 +292,4 @@ for col in contradicting_nouns_inserted_df.columns:
 entirely_different_nouns_df = contradicting_nouns_inserted_df.rename(columns={"different_noun_0": "sent"})
 
 # write final output to disc:
-entirely_different_nouns_df.to_csv('contradiction_by_different_noun.csv', sep=';')
+entirely_different_nouns_df.to_csv('output/contradiction_by_different_noun.csv', sep=';')
