@@ -196,7 +196,7 @@ def find_sent_with_same_sb (sents_DB_df, own_sents_df, st_model):
 
 
 # load SNLI training set
-train_df = pd.read_csv('snli_1.0_train.csv', sep=',')  # adjust the path according to your directory
+train_df = pd.read_csv('input/snli_1.0_train.csv', sep=',')  # adjust the path according to your directory
 train_df_sample = train_df
 train_df_sample = train_df_sample['sentence1']
 train_df_sample = train_df_sample.drop_duplicates()
