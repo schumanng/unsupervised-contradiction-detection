@@ -4,7 +4,7 @@ This script is used to create contradicting hypothesis sentences by finding pair
 subject and verb but a different object. The resulting dataframe contains the premise sentences in the first column
 and the newly generated contradicting hypothesis sentences in the columns 2 to n.
 
-What you need to do: install required packages and change the path according to your directory (line 199)
+What you need to do: install required packages and change the path according to your directory (line 199 and 260)
 """
 
 import re
