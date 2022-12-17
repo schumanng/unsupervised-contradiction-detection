@@ -4,7 +4,7 @@ This script is used to create neutral hypothesis sentences by finding sentence p
 and object, but also additional adjectives or nouns. The resulting dataframe contains the original premise sentences
 in the first column and the newly generated neutral hypothesis sentences in the columns 2 to n.
 
-What you need to do: install required packages and change the path according to your directory (line 220)
+What you need to do: install required packages and change the path according to your directory (line 220 and 282)
 """
 
 import re
