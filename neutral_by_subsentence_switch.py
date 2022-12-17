@@ -102,4 +102,4 @@ for col in switched_sub_sentences_lst_df.columns:
 switched_sub_sentences_lst_df = switched_sub_sentences_lst_df.rename(columns={"neutral_by_switching_0": "sent"})
 
 # write final output to disc:
-switched_sub_sentences_lst_df.to_csv('neutral_by_subsentence_switch.csv', sep=';')
+switched_sub_sentences_lst_df.to_csv('output/neutral_by_subsentence_switch.csv', sep=';')
