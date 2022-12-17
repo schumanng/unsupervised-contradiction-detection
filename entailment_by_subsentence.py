@@ -4,7 +4,7 @@ This script is used to create entailing hypothesis sentences by extracting sub-s
 fact of the sentence. The extraction of the corresponding sentence subtrees is done using Spacy's dependency- and
 part-of-speech tags.
 
-What you need to do: install required packages and change the path according to your directory (line 95)
+What you need to do: install required packages and change the path according to your directory (line 95 and 133)
 """
 
 import spacy
