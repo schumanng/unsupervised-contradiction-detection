@@ -11,7 +11,7 @@ The modified sentences are then transformed into alternative sentences with the 
 model. The resulting dataframe contains the original premise sentences in the first column and the newly generated
 contradicting hypothesis sentences in the columns 2 to n.
 
-What you need to do: install required packages and change the path according to your directory (line 254)
+What you need to do: install required packages and change the path according to your directory (line 254 and 295)
 """
 
 import spacy
