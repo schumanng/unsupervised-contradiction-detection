@@ -172,7 +172,7 @@ def predict_masked_sent(text, nlp_model, top_k=5):
 
 
 # load SNLI training set
-train_df = pd.read_csv('snli_1.0_train.csv', sep=',')  # adjust the path according to your directory
+train_df = pd.read_csv('input/snli_1.0_train.csv', sep=',')  # adjust the path according to your directory
 train_df_sample = train_df#[:2000]  # draw a sample, if desired
 train_df_sample = train_df_sample['sentence1']
 train_df_sample = train_df_sample.drop_duplicates()
@@ -210,4 +210,4 @@ for col in neutral_modifier_insertion_df.columns:
 neutral_modifier_insertion_df = neutral_modifier_insertion_df.rename(columns={"neutral_modifier_0": "sent"})
 
 # write final output to disc:
-neutral_modifier_insertion_df.to_csv('neutral_by_modifier.csv', sep=';')
+neutral_modifier_insertion_df.to_csv('output/neutral_by_modifier.csv', sep=';')
