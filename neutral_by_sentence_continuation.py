@@ -20,7 +20,7 @@ pd.set_option('display.max_columns', 1000)
 pd.set_option('display.max_colwidth', None)
 
 # load SNLI training set
-train_df = pd.read_csv('snli_1.0_train.csv', sep=',')  # adjust the path according to your directory
+train_df = pd.read_csv('input/snli_1.0_train.csv', sep=',')  # adjust the path according to your directory
 
 # load spacy's language model "en_core_web_lg" and pegasus model for paraphrasing
 pegasus_model = AutoModelForSeq2SeqLM.from_pretrained("tuner007/pegasus_paraphrase")
