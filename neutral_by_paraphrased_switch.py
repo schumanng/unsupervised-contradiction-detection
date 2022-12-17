@@ -7,7 +7,7 @@ used as new hypothesis sentences (if they contain additional information, e.g. n
 (neutral) information will be provided by the hypothesis sentences. The resulting dataframe contains the new premise sentences
 in the first column and the neutral hypothesis sentences in the columns 2 to n.
 
-What you need to do: install required packages and change the path according to your directory (line 71)
+What you need to do: install required packages and change the path according to your directory (line 71 and 79)
 """
 
 import spacy
