@@ -7,7 +7,7 @@ different nouns and hypernyms). This is to ensure that the sentences differ suff
 The resulting dataframe contains the original premise sentences in the first column and the contradictory
 hypothesis sentences in the columns 2 to 4.
 
-What you need to do: install required packages and change the path according to your directory (line 83)
+What you need to do: install required packages and change the path according to your directory (line 83 and 98)
 """
 
 import spacy
